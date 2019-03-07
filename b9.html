@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b9</title>
+</head>
+<body>
+<script>
+    let mag = ['a','g','f','g','t','t','b','h','p','y',22,2,7,16,8,26,10,9];
+    let x = prompt("Ký tự bất kỳ?");
+    function mkt(arr, a) {
+        let hop = [];
+        for (let o = 0; o < arr.length; o++) {
+            if (a == arr[o]) {
+                hop.push(arr[o]);
+            }
+        }
+        if (hop.length > 0) {
+            alert("Ký tự " + a + " xuất hiện " + hop.length + ' lần trong mảng!');
+        } else {
+            alert(-1);
+        }
+    }
+    mkt(mag, x);
+</script>
+</body>
+</html>
