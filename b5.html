@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b5</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập giá trị nguyên!"));
+    let b = parseInt(prompt("Nhập giá trị nguyên lần 2!"));
+    let c = parseInt(prompt("Nhập giá trị nguyên lần 3!"));
+    function benhat(x, y, z) {
+        let min = x;
+        if (x > y) {
+            min = y;
+        }
+        if (y > z) {
+            min = z;
+        }
+        alert(min + ' là giá trị nhỏ nhất được nhập!');
+    }
+    benhat(a, b, c)
+</script>
+</body>
+</html>
